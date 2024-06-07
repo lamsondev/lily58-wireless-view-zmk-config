@@ -5,6 +5,7 @@
  */
 
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 / {
@@ -33,21 +34,21 @@
 
         layer_1 {
             bindings = <
-&kp F1     &kp F2             &kp F3           &kp F4             &kp F5               &kp F6                                  &kp F7  &kp F8    &kp F9        &kp F10    &kp F11        &kp F12
-&kp CAPS   &trans             &trans           &trans             &trans               &trans                                  &trans  &kp HOME  &kp UP_ARROW  &kp END    &kp PAGE_UP    &trans
-&kp LCTRL  &mt EXCL NUMBER_1  &mt AT NUMBER_2  &mt HASH NUMBER_3  &mt DOLLAR NUMBER_4  &mt PERCENT NUMBER_5                    &trans  &kp LEFT  &kp DOWN      &kp RIGHT  &kp PAGE_DOWN  &trans
-&kp LSHFT  &trans             &trans           &trans             &trans               &trans                &trans    &trans  &trans  &trans    &trans        &trans     &trans         &trans
-                                               &kp LGUI           &trans               &kp LALT              &trans    &trans  &trans  &trans    &trans
+&kp F1     &kp F2             &kp F3           &kp F4             &kp F5               &kp F6                                     &kp F7  &kp F8    &kp F9        &kp F10    &kp F11        &kp F12
+&kp CAPS   &trans             &trans           &trans             &trans               &trans                                     &trans  &kp HOME  &kp UP_ARROW  &kp END    &kp PAGE_UP    &trans
+&kp LCTRL  &mt EXCL NUMBER_1  &mt AT NUMBER_2  &mt HASH NUMBER_3  &mt DOLLAR NUMBER_4  &mt PERCENT NUMBER_5                       &trans  &kp LEFT  &kp DOWN      &kp RIGHT  &kp PAGE_DOWN  &trans
+&kp LSHFT  &trans             &trans           &trans             &trans               &trans                &trans    &trans     &trans  &trans    &trans        &trans     &trans         &trans
+                                               &kp LGUI           &trans               &kp LALT              &trans    &kp MINUS  &trans  &trans    &trans
             >;
         };
 
         layer_2 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
+&kp LA(F4)      &kp  &kp KP_NUMBER_7                    &kp KP_NUMBER_8  &kp KP_NUMBER_9                      &kp KP_DIVIDE                      &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans  &kp
+&kp LA(TAB)     &kp  &kp KP_NUMBER_4                    &kp KP_NUMBER_5  &kp KP_NUMBER_6                      &kp KP_MULTIPLY                    &kp         &kp           &kp           &kp           &kp     &kp
+&kp LCTRL       &kp  &kp KP_NUMBER_1                    &kp KP_NUMBER_2  &kp KP_NUMBER_3                      &kp KP_SUBTRACT                    &kp         &kp           &kp           &kp           &kp     &kp
+&kp LEFT_SHIFT  &kp  &mt LEFT_BRACKET LEFT_PARENTHESIS  &kp KP_NUMBER_0  &mt RIGHT_BRACKET RIGHT_PARENTHESIS  &kp KP_PLUS      &kp          &kp  &kp         &kp           &kp           &kp           &kp     &kp LEFT_SHIFT
+                                                        &kp              &kp PERIOD                           &kp ENTER        &kp UNDER    &kp  &kp         &kp           &kp
             >;
         };
     };
