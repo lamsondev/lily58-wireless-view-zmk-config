@@ -44,11 +44,11 @@
 
         layer_2 {
             bindings = <
-&kp LA(F4)      &kp  &kp KP_NUMBER_7                    &kp KP_NUMBER_8  &kp KP_NUMBER_9                      &kp KP_DIVIDE                      &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans  &kp
-&kp LA(TAB)     &kp  &kp KP_NUMBER_4                    &kp KP_NUMBER_5  &kp KP_NUMBER_6                      &kp KP_MULTIPLY                    &kp         &kp           &kp           &kp           &kp     &kp
-&kp LCTRL       &kp  &kp KP_NUMBER_1                    &kp KP_NUMBER_2  &kp KP_NUMBER_3                      &kp KP_SUBTRACT                    &kp         &kp           &kp           &kp           &kp     &kp
-&kp LEFT_SHIFT  &kp  &mt LEFT_BRACKET LEFT_PARENTHESIS  &kp KP_NUMBER_0  &mt RIGHT_BRACKET RIGHT_PARENTHESIS  &kp KP_PLUS      &kp          &kp  &kp         &kp           &kp           &kp           &kp     &kp LEFT_SHIFT
-                                                        &kp              &kp PERIOD                           &kp ENTER        &kp UNDER    &kp  &kp         &kp           &kp
+&kp LA(F4)      &kp  &kp KP_NUMBER_7                    &kp KP_NUMBER_8  &kp KP_NUMBER_9                      &kp KP_DIVIDE                      &bt BT_CLR          &bt BT_SEL 0            &bt BT_SEL 1           &bt BT_SEL 2                   &trans                          &kp
+&kp LA(TAB)     &kp  &kp KP_NUMBER_4                    &kp KP_NUMBER_5  &kp KP_NUMBER_6                      &kp KP_MULTIPLY                    &kp                 &kp                     &kp                    &kp                            &kp                             &kp
+&kp LCTRL       &kp  &kp KP_NUMBER_1                    &kp KP_NUMBER_2  &kp KP_NUMBER_3                      &kp KP_SUBTRACT                    &mt CARET NUMBER_6  &mt AMPERSAND NUMBER_7  &mt ASTERISK NUMBER_8  &mt LEFT_PARENTHESIS NUMBER_9  &mt RIGHT_PARENTHESIS NUMBER_0  &kp
+&kp LEFT_SHIFT  &kp  &mt LEFT_BRACKET LEFT_PARENTHESIS  &kp KP_NUMBER_0  &mt RIGHT_BRACKET RIGHT_PARENTHESIS  &kp KP_PLUS      &kp          &kp  &kp                 &kp                     &kp                    &kp                            &kp                             &kp LEFT_SHIFT
+                                                        &kp              &kp PERIOD                           &kp ENTER        &kp UNDER    &kp  &kp                 &kp                     &kp
             >;
         };
     };
