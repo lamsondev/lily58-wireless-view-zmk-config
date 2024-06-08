@@ -36,7 +36,7 @@
         layer_1 {
             bindings = <
 &kp F1     &kp F2        &kp F3        &kp F4        &kp F5        &kp F6                                  &kp F7      &kp F8    &kp F9        &kp F10    &kp F11        &kp F12
-&kp CAPS   &kp EXCL      &kp AT        &kp HASH      &kp DOLLAR    &kp PERCENT                             &trans      &kp HOME  &kp UP_ARROW  &kp END    &kp PAGE_UP    &trans
+&kp CAPS   &kp EXCL      &kp AT        &kp HASH      &kp DOLLAR    &kp PERCENT                             &kp INSERT  &kp HOME  &kp UP_ARROW  &kp END    &kp PAGE_UP    &trans
 &kp LCTRL  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                            &kp DELETE  &kp LEFT  &kp DOWN      &kp RIGHT  &kp PAGE_DOWN  &trans
 &kp LSHFT  &kp LC(Z)     &kp LC(Y)     &kp LC(C)     &kp LC(V)     &trans        &sys_reset    &sys_reset  &trans      &trans    &trans        &trans     &trans         &trans
                                        &kp LGUI      &trans        &kp LALT      &trans        &kp MINUS   &trans      &trans    &trans
