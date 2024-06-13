@@ -27,7 +27,7 @@
 &kp TAB    &kp Q   &kp W   &kp E     &kp R         &kp T                                     &kp Y          &kp U      &kp I      &kp O    &kp P     &kp BACKSLASH
 &kp LCTRL  &kp A   &kp S   &kp D     &kp F         &kp G                                     &kp H          &kp J      &kp K      &kp L    &kp SEMI  &kp SQT
 &kp LSHFT  &kp Z   &kp X   &kp C     &kp V         &kp B         &tog 3         &tog 5       &kp N          &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                           &kp LGUI  &kt CAPSLOCK  &kp LEFT_ALT  &lt 1 SPACE    &lt 2 ENTER  &kp BACKSPACE  &kp MINUS  &kp EQUAL
+                           &kp LGUI  &kp CAPSLOCK  &kp LEFT_ALT  &lt 1 SPACE    &lt 2 ENTER  &kp BACKSPACE  &kp MINUS  &kp EQUAL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -45,7 +45,7 @@
 
         layer_2 {
             bindings = <
-&kp LA(F4)      &none  &kp KP_NUMBER_7   &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_DIVIDE                                &bt BT_CLR    &bt BT_SEL 0   &bt BT_SEL 1  &bt BT_SEL 2          &none                  &none
+&kp LA(F4)      &none  &kp KP_NUMBER_7   &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_DIVIDE                                &bt BT_CLR    &bt BT_SEL 0   &bt BT_SEL 1  &bt BT_SEL 2          &bt BT_CLR_ALL         &none
 &kp LA(TAB)     &none  &kp KP_NUMBER_4   &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MULTIPLY                              &kp CARET     &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none
 &kp LCTRL       &none  &kp KP_NUMBER_1   &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_SUBTRACT                              &kp NUMBER_6  &kp NUMBER_7   &kp NUMBER_8  &kp NUMBER_9          &kp NUMBER_0           &none
 &kp LEFT_SHIFT  &none  &kp LEFT_BRACKET  &kp KP_NUMBER_0  &kp PERIOD       &kp KP_PLUS      &bootloader    &bootloader  &none         &none          &none         &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LEFT_SHIFT
@@ -75,11 +75,11 @@
 
         FPS {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                       &trans  &trans  &trans     &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans                       &trans  &trans  &trans     &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans                       &trans  &trans  &trans     &trans    &kp UP    &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans       &trans  &trans  &trans  &trans     &kp LEFT  &kp DOWN  &kp RIGHT
-                        &trans  &trans  &trans  &kp SPACE    &trans  &trans  &trans  &kp RCTRL
+&trans  &trans  &trans  &trans  &trans            &trans                             &trans  &trans  &trans     &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans            &trans                             &trans  &trans  &trans     &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans            &trans                             &trans  &trans  &trans     &trans    &kp UP    &trans
+&trans  &trans  &trans  &trans  &trans            &trans        &none        &trans  &trans  &trans  &trans     &kp LEFT  &kp DOWN  &kp RIGHT
+                        &trans  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp SPACE    &trans  &trans  &trans  &kp RCTRL
             >;
         };
     };
