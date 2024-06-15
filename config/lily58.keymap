@@ -38,7 +38,7 @@
 &kp F1     &kp F2        &kp F3        &kp F4        &kp F5        &kp F6                                  &kp F7      &kp F8     &kp F9        &kp F10    &kp F11        &kp F12
 &kp CAPS   &kp EXCL      &kp AT        &kp HASH      &kp DOLLAR    &kp PERCENT                             &kp INSERT  &kp HOME   &kp UP_ARROW  &kp END    &kp PAGE_UP    &none
 &kp LCTRL  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                            &kp DELETE  &kp LEFT   &kp DOWN      &kp RIGHT  &kp PAGE_DOWN  &none
-&kp LSHFT  &kp LC(Z)     &kp LC(Y)     &kp LC(S)     &kp LC(C)     &kp LC(V)     &sys_reset    &sys_reset  &kp LC(N)   &kp LC(T)  &kp LC(R)     &kp LC(W)  &none          &none
+&kp LSHFT  &kp LC(Z)     &kp LC(Y)     &kp LC(X)     &kp LC(C)     &kp LC(V)     &sys_reset    &sys_reset  &kp LC(N)   &kp LC(T)  &kp LC(R)     &kp LC(W)  &none          &none
                                        &kp LGUI      &none         &kp LALT      &none         &kp MINUS   &none       &none      &none
             >;
         };
