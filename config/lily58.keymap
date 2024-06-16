@@ -36,8 +36,8 @@
         layer_1 {
             bindings = <
 &kp F1     &kp F2        &kp F3        &kp F4        &kp F5        &kp F6                                  &kp F7      &kp F8     &kp F9        &kp F10    &kp F11        &kp F12
-&kp CAPS   &kp EXCL      &kp AT        &kp HASH      &kp DOLLAR    &kp PERCENT                             &kp INSERT  &kp HOME   &kp UP_ARROW  &kp END    &kp PAGE_UP    &none
-&kp LCTRL  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                            &kp DELETE  &kp LEFT   &kp DOWN      &kp RIGHT  &kp PAGE_DOWN  &none
+&none      &kp EXCL      &kp AT        &kp HASH      &kp DOLLAR    &kp PERCENT                             &kp INSERT  &kp HOME   &kp UP_ARROW  &kp END    &kp PAGE_UP    &none
+&kp CAPS   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                            &kp DELETE  &kp LEFT   &kp DOWN      &kp RIGHT  &kp PAGE_DOWN  &none
 &kp LSHFT  &kp LC(Z)     &kp LC(Y)     &kp LC(X)     &kp LC(C)     &kp LC(V)     &sys_reset    &sys_reset  &kp LC(N)   &kp LC(T)  &kp LC(R)     &kp LC(W)  &none          &none
                                        &kp LGUI      &none         &kp LALT      &none         &kp MINUS   &none       &none      &none
             >;
@@ -55,19 +55,19 @@
 
         MMO_1 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
+&kp ESC    &kp N1  &kp N2  &kp N3    &kp N4     &kp N5                       &trans  &trans  &trans  &trans  &trans  &trans
+&kp TAB    &kp Q   &kp W   &kp E     &kp R      &kp T                        &trans  &trans  &trans  &trans  &trans  &trans
+&trans     &kp A   &kp S   &kp D     &kp F      &kp G                        &trans  &trans  &trans  &trans  &trans  &trans
+&kp LSHFT  &kp Z   &kp X   &kp C     &kp V      &kp B   &to 0        &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                           &kp LGUI  &kp LCTRL  &mo 4   &kp SPACE    &trans  &trans  &trans  &trans
             >;
         };
 
         MMO_2 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp N6  &kp W   &kp N7  &kp N8  &kp N9                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp A   &kp S   &kp D   &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
             >;
