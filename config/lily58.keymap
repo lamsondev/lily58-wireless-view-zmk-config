@@ -5,7 +5,6 @@
  */
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 / {
@@ -26,7 +25,7 @@
 &kp TAB    &kp Q   &kp W   &kp E     &kp R         &kp T                                     &kp Y          &kp U      &kp I      &kp O    &kp P     &kp BACKSLASH
 &kp LCTRL  &kp A   &kp S   &kp D     &kp F         &kp G                                     &kp H          &kp J      &kp K      &kp L    &kp SEMI  &kp SQT
 &kp LSHFT  &kp Z   &kp X   &kp C     &kp V         &kp B         &to 3          &to 4        &kp N          &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                           &kp LGUI  &kp CAPSLOCK  &kp LEFT_ALT  &lt 1 SPACE    &lt 2 ENTER  &kp BACKSPACE  &kp MINUS  &kp EQUAL
+                           &kp LGUI  &kp CAPSLOCK  &kp LEFT_ALT  &lt 1 SPACE    &lt 0 ENTER  &kp BACKSPACE  &kp MINUS  &kp EQUAL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -34,21 +33,21 @@
 
         layer_1 {
             bindings = <
-&none      &none         &none         &none         &none         &none                                   &none      &none      &none      &none      &none    &none
-&kp F1     &kp F2        &kp F3        &kp F4        &kp F5        &kp F6                                  &kp F7     &kp F8     &kp F9     &kp F10    &kp F11  &kp F12
-&kp CAPS   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                            &kp N5     &kp N6     &kp N7     &kp N8     &kp N9   &kp N0
-&kp LSHFT  &kp LC(Z)     &kp LC(Y)     &kp LC(X)     &kp LC(C)     &kp LC(V)     &sys_reset    &sys_reset  &kp LC(N)  &kp LC(T)  &kp LC(R)  &kp LC(W)  &none    &none
-                                       &kp LGUI      &none         &kp LALT      &none         &kp MINUS   &none      &none      &none
+&kp KP_NUMLOCK  &kp KP_DIVIDE                      &kp KP_NUMBER_7                        &kp KP_NUMBER_8      &kp KP_NUMBER_9  &kp KP_MULTIPLY                            &none       &none     &none         &none      &none          &none
+&none           &kp KP_MINUS                       &kp KP_NUMBER_4                        &kp KP_NUMBER_5      &kp KP_NUMBER_6  &kp KP_PLUS                                &kp INSERT  &kp HOME  &kp UP_ARROW  &kp END    &kp PAGE_UP    &kp C_VOLUME_UP
+&kp LCTRL       &kp KP_EQUAL                       &kp KP_NUMBER_1                        &kp KP_NUMBER_2      &kp KP_NUMBER_3  &kp KP_MINUS                               &kp DELETE  &kp LEFT  &kp DOWN      &kp RIGHT  &kp PAGE_DOWN  &kp C_VOLUME_DOWN
+&kp ENTER       &mt LEFT_BRACKET LEFT_PARENTHESIS  &mt LC(RIGHT_BRACE) RIGHT_PARENTHESIS  &kp LC(KP_NUMBER_0)  &kp LC(KP_DOT)   &kp LC(KP_PLUS)  &sys_reset    &sys_reset  &none       &none     &none         &none      &none          &none
+                                                                                          &kp LGUI             &none            &kp LALT         &none         &kp MINUS   &none       &none     &none
             >;
         };
 
         layer_2 {
             bindings = <
-&kp LA(F4)      &none           &kp KP_NUMBER_7   &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_DIVIDE                                &bt BT_CLR    &bt BT_SEL 0   &bt BT_SEL 1  &bt BT_SEL 2          &bt BT_CLR_ALL         &none
-&kp LA(TAB)     &none           &kp KP_NUMBER_4   &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MULTIPLY                              &kp CARET     &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none
-&kp LCTRL       &none           &kp KP_NUMBER_1   &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_SUBTRACT                              &kp NUMBER_6  &kp NUMBER_7   &kp NUMBER_8  &kp NUMBER_9          &kp NUMBER_0           &none
-&kp LEFT_SHIFT  &kp KP_NUMLOCK  &kp LEFT_BRACKET  &kp KP_NUMBER_0  &kp PERIOD       &kp KP_PLUS      &bootloader    &bootloader  &none         &none          &none         &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LEFT_SHIFT
-                                                  &kp LEFT_WIN     &kp BACKSPACE    &kp ENTER        &kp UNDER      &none        &none         &none          &none
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
             >;
         };
 
@@ -59,7 +58,7 @@
 &kp TAB    &kp Q   &kp W   &kp F     &kp P         &kp B                                     &kp J          &kp L      &kp U      &kp Y    &kp SEMI  &kp BACKSLASH
 &kp LCTRL  &kp A   &kp R   &kp S     &kp T         &kp G                                     &kp M          &kp N      &kp E      &kp I    &kp O     &kp APOS
 &kp LSHFT  &kp Z   &kp X   &kp C     &kp D         &kp V         &to 4          &to 0        &kp K          &kp H      &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                           &kp LGUI  &kp CAPSLOCK  &kp LEFT_ALT  &lt 1 SPACE    &lt 2 ENTER  &kp BACKSPACE  &kp MINUS  &kp EQUAL
+                           &kp LGUI  &kp CAPSLOCK  &kp LEFT_ALT  &lt 1 SPACE    &lt 0 ENTER  &kp BACKSPACE  &kp MINUS  &kp EQUAL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
