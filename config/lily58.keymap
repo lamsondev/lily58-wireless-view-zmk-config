@@ -25,7 +25,7 @@
 &kp ESC    &kp N1  &kp N2  &kp N3    &kp N4        &kp N5                                    &kp N6         &kp N7     &kp N8     &kp N9   &kp N0    &kp GRAVE
 &kp TAB    &kp Q   &kp W   &kp E     &kp R         &kp T                                     &kp Y          &kp U      &kp I      &kp O    &kp P     &kp BACKSLASH
 &kp LCTRL  &kp A   &kp S   &kp D     &kp F         &kp G                                     &kp H          &kp J      &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z   &kp X   &kp C     &kp V         &kp B         &to 3          &to 5        &kp N          &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
+&kp LSHFT  &kp Z   &kp X   &kp C     &kp V         &kp B         &to 3          &to 4        &kp N          &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
                            &kp LGUI  &kp CAPSLOCK  &kp LEFT_ALT  &lt 1 SPACE    &lt 2 ENTER  &kp BACKSPACE  &kp MINUS  &kp EQUAL
             >;
 
@@ -52,13 +52,26 @@
             >;
         };
 
+        COLEMAK_DH {
+            display-name = "Base";
+            bindings = <
+&kp ESC    &kp N1  &kp N2  &kp N3    &kp N4        &kp N5                                    &kp N6         &kp N7     &kp N8     &kp N9   &kp N0    &kp GRAVE
+&kp TAB    &kp Q   &kp W   &kp F     &kp P         &kp B                                     &kp J          &kp L      &kp U      &kp Y    &kp SEMI  &kp BACKSLASH
+&kp LCTRL  &kp A   &kp R   &kp S     &kp T         &kp G                                     &kp M          &kp N      &kp E      &kp I    &kp O     &kp APOS
+&kp LSHFT  &kp Z   &kp X   &kp C     &kp D         &kp V         &to 4          &to 0        &kp K          &kp H      &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
+                           &kp LGUI  &kp CAPSLOCK  &kp LEFT_ALT  &lt 1 SPACE    &lt 2 ENTER  &kp BACKSPACE  &kp MINUS  &kp EQUAL
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+        };
+
         GAMING {
             bindings = <
 &kp ESC         &kp N1  &kp N2  &kp N3        &kp N4            &kp N5                       &trans  &trans  &trans     &trans    &trans    &trans
 &kp TAB         &kp Q   &kp W   &kp E         &kp R             &kp T                        &trans  &trans  &trans     &trans    &trans    &trans
 &kp LCTRL       &kp A   &kp S   &kp D         &kp F             &kp G                        &trans  &trans  &trans     &trans    &kp UP    &trans
 &kp LEFT_SHIFT  &kp Z   &kp X   &kp C         &kp V             &kp B   &to 0        &trans  &trans  &trans  &trans     &kp LEFT  &kp DOWN  &kp RIGHT
-                                &kp LEFT_ALT  &kp LEFT_CONTROL  &mo 4   &kp SPACE    &trans  &trans  &trans  &kp RCTRL
+                                &kp LEFT_ALT  &kp LEFT_CONTROL  &mo 5   &kp SPACE    &trans  &trans  &trans  &kp RCTRL
             >;
         };
 
@@ -70,19 +83,6 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
             >;
-        };
-
-        COLEMAK_DH {
-            display-name = "Base";
-            bindings = <
-&kp ESC    &kp N1  &kp N2  &kp N3    &kp N4        &kp N5                                    &kp N6         &kp N7     &kp N8     &kp N9   &kp N0    &kp GRAVE
-&kp TAB    &kp Q   &kp W   &kp E     &kp R         &kp T                                     &kp Y          &kp U      &kp I      &kp O    &kp P     &kp BACKSLASH
-&kp LCTRL  &kp A   &kp S   &kp D     &kp F         &kp G                                     &kp H          &kp J      &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z   &kp X   &kp C     &kp V         &kp B         &to 3          &to 0        &kp N          &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                           &kp LGUI  &kp CAPSLOCK  &kp LEFT_ALT  &lt 1 SPACE    &lt 2 ENTER  &kp BACKSPACE  &kp MINUS  &kp EQUAL
-            >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
     };
 };
