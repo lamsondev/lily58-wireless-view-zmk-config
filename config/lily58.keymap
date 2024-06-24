@@ -8,6 +8,15 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    macros {
+        task_manager: task_manager {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LCTRL &kp LEFT_ALT &kp DEL>;
+            label = "TASK_MANAGER";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
