@@ -21,28 +21,21 @@
         compatible = "zmk,keymap";
 
         QWERTY {
-            // ------------------------------------------------------------------------------------------------------------
-            // |  ESC  |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |   `   |
-            // |  TAB  |  Q  |  W  |  E   |  R   |  T   |                   |  Y   |  U    |  I    |  O   |   P   |   -   |
-            // |  CTRL |  A  |  S  |  D   |  F   |  G   |                   |  H   |  J    |  K    |  L   |   ;   |   '   |
-            // | SHIFT |  Z  |  X  |  C   |  V   |  B   |   "["  |  |  "]"  |  N   |  M    |  ,    |  .   |   /   | SHIFT |
-            //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
-
+            label = "QWERTY";
             display-name = "qwerty";
             bindings = <
 &kp ESC       &kp N1  &kp N2  &kp N3    &kp N4     &kp N5                                    &kp N6         &kp N7     &kp N8     &kp N9   &kp N0    &kp GRAVE
 &kp TAB       &kp Q   &kp W   &kp E     &kp R      &kp T                                     &kp Y          &kp U      &kp I      &kp O    &kp P     &kp BACKSLASH
 &kp CAPSLOCK  &kp A   &kp S   &kp D     &kp F      &kp G                                     &kp H          &kp J      &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LSHFT     &kp Z   &kp X   &kp C     &kp V      &kp B         &to 4          &to 1        &kp N          &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
+&kp LSHFT     &kp Z   &kp X   &kp C     &kp V      &kp B         &to 4          &to 2        &kp N          &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
                               &kp LGUI  &kp LCTRL  &kp LEFT_ALT  &lt 2 SPACE    &lt 3 ENTER  &kp BACKSPACE  &kp MINUS  &kp EQUAL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
-            label = "QWERTY";
         };
 
-        COLEMAK_DH {
-            display-name = "COLEMAK_DH";
+        Colemak_DH {
+            display-name = "CMK_DH";
             bindings = <
 &kp ESC       &kp N1  &kp N2  &kp N3    &kp N4            &kp N5                                    &kp N6         &kp N7     &kp N8     &kp N9   &kp N0    &kp GRAVE
 &kp TAB       &kp Q   &kp W   &kp F     &kp P             &kp B                                     &kp J          &kp L      &kp U      &kp Y    &kp SEMI  &kp BACKSLASH
@@ -76,24 +69,14 @@
 
         GAMING {
             bindings = <
-&kp ESC         &kp N1  &kp N2  &kp N3        &kp N4            &kp N5                      &none  &none  &none      &none     &none     &none
-&kp TAB         &kp Q   &kp W   &kp E         &kp R             &kp T                       &none  &none  &none      &none     &none     &none
-&kp LCTRL       &kp A   &kp S   &kp D         &kp F             &kp G                       &none  &none  &none      &none     &kp UP    &none
-&kp LEFT_SHIFT  &kp Z   &kp X   &kp C         &kp V             &kp B   &to 0        &none  &none  &none  &none      &kp LEFT  &kp DOWN  &kp RIGHT
-                                &kp LEFT_ALT  &kp LEFT_CONTROL  &mo 5   &kp SPACE    &none  &none  &none  &kp RCTRL
+&kp ESC    &kp N1  &kp W   &kp N3         &kp N4              &kp N5                              &none          &none       &none      &none          &none     &none
+&kp TAB    &kp A   &kp S   &kp D          &kp E               &kp F                               &none          &kp INSERT  &kp HOME   &kp PAGE_UP    &none     &none
+&kp LSHFT  &kp Z   &kp X   &kp C          &kp V               &kp B                               &none          &kp DELETE  &kp END    &kp PAGE_DOWN  &kp UP    &none
+&kp LCTRL  &kp F1  &kp F2  &kp F3         &kp F4              &kp F5    &to 0        &to 1        &none          &none       &none      &kp LEFT       &kp DOWN  &kp RIGHT
+                           &kp LA(LCTRL)  &kp LA(LEFT_SHIFT)  &kp LALT  &kp SPACE    &lt 0 ENTER  &kp BACKSPACE  &none       &kp RCTRL
             >;
 
             label = "GAMING";
-        };
-
-        layer_5 {
-            bindings = <
-&trans       &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&kp LA(TAB)  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans       &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans       &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                             &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
-            >;
         };
     };
 };
