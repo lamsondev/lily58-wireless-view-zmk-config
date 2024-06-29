@@ -22,11 +22,11 @@
 
         Gaming {
             bindings = <
-&kp N1     &kp N2  &kp W  &kp N3  &kp N4         &kp ESC                             &kp F1         &kp F2      &kp F3     &kp F4         &kp F5    &kp F6
-&kp TAB    &kp A   &kp S  &kp D   &kp F          &trans                              &none          &kp INSERT  &kp HOME   &kp PAGE_UP    &none     &none
-&kp LSHFT  &kp Q   &kp E  &kp R   &kp T          &trans                              &none          &kp DELETE  &kp END    &kp PAGE_DOWN  &kp UP    &none
-&kp LCTRL  &kp Z   &kp X  &kp C   &kp V          &trans    &to 1        &to 2        &none          &none       &none      &kp LEFT       &kp DOWN  &kp RIGHT
-                          &none   &kp LS(LCTRL)  &kp LALT  &kp SPACE    &lt 1 ENTER  &kp BACKSPACE  &none       &kp RCTRL
+&kp N1     &kp N2  &kp W  &kp N3      &kp N4         &none                               &kp F1         &kp F2      &kp F3     &kp F4         &kp F5    &kp F6
+&kp TAB    &kp A   &kp S  &kp D       &kp F          &none                               &none          &kp INSERT  &kp HOME   &kp PAGE_UP    &none     &none
+&kp LSHFT  &kp Q   &kp E  &kp R       &kp T          &none                               &none          &kp DELETE  &kp END    &kp PAGE_DOWN  &kp UP    &none
+&kp LCTRL  &kp Z   &kp X  &kp C       &kp V          &none     &to 1        &to 2        &none          &none       &none      &kp LEFT       &kp DOWN  &kp RIGHT
+                          &kp ESCAPE  &kp LS(LCTRL)  &kp LALT  &kp SPACE    &lt 1 ENTER  &kp BACKSPACE  &none       &kp RCTRL
             >;
 
             label = "GAMING";
