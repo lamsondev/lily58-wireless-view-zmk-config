@@ -7,18 +7,8 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/mouse.h>
 
 / {
-    macros {
-        task_manager: task_manager {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LCTRL &kp LEFT_ALT &kp DEL>;
-            label = "TASK_MANAGER";
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -55,26 +45,23 @@
             >;
         };
 
-        Gaming {
+        layer_3 {
             bindings = <
-&kp ESC    &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                        &kp F1         &kp F2  &kp F3     &kp F4    &kp F5        &kp N0
-&kp TAB    &kp Q   &kp W   &kp E   &kp R   &kp T                         &kp Y          &kp U   &kp I      &kp O     &kp P         &none
-&kp LSHFT  &kp A   &kp S   &kp D   &kp F   &kp G                         &kp H          &kp J   &kp K      &kp L     &kp UP_ARROW  &mkp MB2
-&kp LCTRL  &kp Z   &kp X   &kp C   &kp V   &kp B     &to 0        &to 0  &kp N          &kp M   &kp COMMA  &kp LEFT  &kp DOWN      &kp RIGHT
-                           &none   &none   &kp LALT  &kp SPACE    &mo 4  &kp BACKSPACE  &none   &kp RCTRL
+&kp ESC    &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                         &kp F1  &kp F2  &kp F3     &kp F4    &kp F5    &kp N0
+&kp TAB    &kp Q   &kp W   &kp E   &kp R   &kp T                          &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
+&kp LSHFT  &kp A   &kp S   &kp D   &kp F   &kp G                          &kp H   &kp J   &kp K      &kp L     &kp UP    &trans
+&kp LCTRL  &kp Z   &kp X   &kp C   &kp V   &kp B     &trans       &trans  &kp N   &kp M   &kp COMMA  &kp LEFT  &kp DOWN  &kp RIGHT
+                           &trans  &trans  &kp LALT  &kp SPACE    &mo 4   &trans  &trans  &trans
             >;
-
-            label = "GAMING";
         };
 
         layer_4 {
-            label = "GAMING_2";
             bindings = <
-&kp ESC    &kp N1  &kp N2  &kp N3              &kp N4            &kp N5                        &kp F1         &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK  &none  &none
-&kp TAB    &kp Q   &kp W   &kp E               &kp R             &kp T                         &kp F2         &kp INSERT       &kp HOME        &kp PAGE_UP      &none  &none
-&kp LSHFT  &kp A   &kp S   &kp D               &kp F             &kp G                         &kp F3         &kp DELETE       &kp END         &kp PAGE_DOWN    &none  &none
-&kp LCTRL  &kp Z   &kp X   &kp C               &kp V             &kp B     &to 0        &to 0  &kp F4         &none            &none           &none            &none  &none
-                           &kp LC(LEFT_SHIFT)  &kp LS(LEFT_ALT)  &kp LALT  &kp SPACE    &none  &kp BACKSPACE  &none            &kp RCTRL
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
             >;
         };
     };
