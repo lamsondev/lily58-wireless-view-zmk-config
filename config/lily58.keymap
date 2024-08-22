@@ -18,7 +18,7 @@
 &kp ESC       &kp N1  &kp N2  &kp N3    &kp N4     &kp N5                                 &kp N6    &kp N7     &kp N8     &kp N9   &kp N0    &kp GRAVE
 &kp TAB       &kp Q   &kp W   &kp F     &kp P      &kp B                                  &kp J     &kp L      &kp U      &kp Y    &kp SEMI  &kp BSLH
 &kp CAPSLOCK  &kp A   &kp R   &kp S     &kp T      &kp G                                  &kp M     &kp N      &kp E      &kp I    &kp O     &kp SQT
-&kp LSHFT     &kp Z   &kp X   &kp C     &kp D      &kp V     &kp LBKT       &kp RBKT      &kp K     &kp H      &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
+&kp LSHFT     &kp Z   &kp X   &kp C     &kp D      &kp V     &to 3          &none         &kp K     &kp H      &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
                               &kp LGUI  &kp LCTRL  &kp LALT  &lt 1 SPACE    &lt 2 RETURN  &kp BSPC  &kp LCTRL  &kp RGUI
             >;
 
@@ -50,6 +50,30 @@
 
             display-name = "Raise";
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+        };
+
+        layer_3 {
+            bindings = <
+&kp ESC    &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                               &kp N6  &kp N7  &kp N8     &kp N9    &kp N0        &trans
+&kp TAB    &kp Q   &kp W   &kp E   &kp R   &kp T                                &kp Y   &kp U   &kp I      &kp O     &kp P         &trans
+&kp LSHFT  &kp A   &kp S   &kp D   &kp F   &kp G                                &kp H   &kp J   &kp K      &kp L     &kp UP_ARROW  &trans
+&kp LCTRL  &kp Z   &kp X   &kp C   &kp V   &kp B     &to 0        &trans        &kp N   &kp M   &kp COMMA  &kp LEFT  &kp DOWN      &kp RIGHT
+                           &trans  &trans  &kp LALT  &kp SPACE    &lt 4 RETURN  &trans  &trans  &kp RCTRL
+            >;
+
+            label = "MMORPG";
+        };
+
+        layer_4 {
+            bindings = <
+&kp ESC    &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                         &kp F1  &kp F2           &kp F3          &kp F4           &kp F5  &kp F6
+&kp TAB    &kp Q   &kp W   &kp E   &kp R   &kp T                          &none   &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK  &none   &trans
+&kp LSHFT  &kp A   &kp S   &kp D   &kp F   &kp G                          &none   &kp INSERT       &kp HOME        &kp PAGE_UP      &none   &trans
+&kp LCTRL  &kp Z   &kp X   &kp C   &kp V   &kp B     &to 0        &trans  &none   &kp DELETE       &kp END         &kp PAGE_DOWN    &none   &none
+                           &trans  &trans  &kp LALT  &kp SPACE    &trans  &trans  &trans           &kp RCTRL
+            >;
+
+            label = "MMORPG_2";
         };
     };
 };
