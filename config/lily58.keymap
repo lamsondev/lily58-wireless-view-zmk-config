@@ -55,7 +55,7 @@
 
             display-name = "lower";
             bindings = <
-&none           &none      &none      &none      &none      &none                            &none       &none      &none      &none      &none          &none
+&kp LA(F4)      &none      &none      &none      &none      &none                            &none       &none      &none      &none      &none          &none
 &none           &kp LC(Q)  &kp LC(W)  &kp LC(E)  &kp LC(R)  &none                            &kp INSERT  &kp HOME   &kp UP     &kp END    &kp PAGE_UP    &kp K_VOLUME_UP
 &none           &kp LC(A)  &kp LC(S)  &kp LC(D)  &kp LC(F)  &none                            &kp DELETE  &kp LEFT   &kp DOWN   &kp RIGHT  &kp PAGE_DOWN  &kp K_VOLUME_DOWN
 &kp LEFT_SHIFT  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &none  &sys_reset    &sys_reset  &kp LC(B)   &kp LC(I)  &kp LC(U)  &none      &none          &kp RIGHT_SHIFT
