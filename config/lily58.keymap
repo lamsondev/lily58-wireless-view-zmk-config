@@ -85,7 +85,7 @@
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
-        numpad {
+        productivity {
             bindings = <
 &none           &kp ESCAPE  &kp N7        &kp N8                             &kp N9                               &kp KP_DIVIDE                        &none  &none  &none  &none  &none  &none
 &none           &kp TAB     &kp NUMBER_4  &kp N5                             &kp NUMBER_6                         &kp KP_MULTIPLY                      &none  &none  &none  &none  &none  &none
@@ -94,17 +94,17 @@
                                           &mt LEFT_BRACKET LEFT_PARENTHESIS  &mt RIGHT_BRACKET RIGHT_PARENTHESIS  &kp BACKSPACE    &kp SPACE    &none  &none  &none  &none
             >;
 
-            label = "productivity";
+            label = "numpad";
         };
 
         gaming {
             display-name = "gaming";
             bindings = <
-&kp ESC    &kp N1  &kp N2  &kp N3    &kp N4     &kp N5                                 &kp F1            &kp F2             &kp F3     &kp F4         &kp F5       &kp F6
-&kp TAB    &kp Q   &kp W   &kp E     &kp R      &kp T                                  &kp U             &kp INSERT         &kp HOME   &kp PAGE_UP    &kp C_PAUSE  &kp C_VOLUME_UP
-&kp CAPS   &kp A   &kp S   &kp D     &kp F      &kp G                                  &kp J             &kp DELETE         &kp END    &kp PAGE_DOWN  &kp UP       &kp C_VOLUME_DOWN
-&kp LSHFT  &kp Z   &kp X   &kp C     &kp V      &kp B     &to 4        &to 0           &kp N             &kp M              &kp I      &kp LEFT       &kp DOWN     &kp RIGHT
-                           &kp LGUI  &kp LCTRL  &kp LALT  &kp SPACE    &kp LEFT_SHIFT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp RCTRL
+&kp ESC         &kp N1  &kp N2  &kp N3    &kp N4     &kp N5                                 &kp F1            &kp F2             &kp F3     &kp F4         &kp F5       &kp F6
+&kp TAB         &kp Q   &kp W   &kp E     &kp R      &kp T                                  &kp U             &kp INSERT         &kp HOME   &kp PAGE_UP    &kp C_PAUSE  &kp C_VOLUME_UP
+&kp LEFT_SHIFT  &kp A   &kp S   &kp D     &kp F      &kp G                                  &kp J             &kp DELETE         &kp END    &kp PAGE_DOWN  &kp UP       &kp C_VOLUME_DOWN
+&kp LCTRL       &kp Z   &kp X   &kp C     &kp V      &kp B     &to 4        &to 0           &kp N             &kp M              &kp I      &kp LEFT       &kp DOWN     &kp RIGHT
+                                &kp LGUI  &kp LCTRL  &kp LALT  &kp SPACE    &kp LEFT_SHIFT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp RCTRL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
