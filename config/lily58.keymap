@@ -100,10 +100,10 @@
         gaming {
             display-name = "gaming";
             bindings = <
-&kp ESC         &kp N1  &kp N2  &kp N3    &kp N4     &kp N5                                 &kp F1            &kp F2             &kp F3     &kp F4         &kp F5       &kp F6
-&kp TAB         &kp Q   &kp W   &kp E     &kp R      &kp T                                  &kp U             &kp INSERT         &kp HOME   &kp PAGE_UP    &kp C_PAUSE  &kp C_VOLUME_UP
-&kp LEFT_SHIFT  &kp A   &kp S   &kp D     &kp F      &kp G                                  &kp J             &kp DELETE         &kp END    &kp PAGE_DOWN  &kp UP       &kp C_VOLUME_DOWN
-&kp LCTRL       &kp Z   &kp X   &kp C     &kp V      &kp B     &to 4        &to 0           &kp N             &kp M              &kp I      &kp LEFT       &kp DOWN     &kp RIGHT
+&kp ESC         &kp N1  &kp N2  &kp N3    &kp N4     &kp N5                                 &kp F1            &kp F2             &kp F3     &kp F4         &kp F5           &kp F6
+&kp TAB         &kp Q   &kp W   &kp E     &kp R      &kp T                                  &kp U             &kp INSERT         &kp HOME   &kp PAGE_UP    &kp PAUSE_BREAK  &kp C_VOLUME_UP
+&kp LEFT_SHIFT  &kp A   &kp S   &kp D     &kp F      &kp G                                  &kp J             &kp DELETE         &kp END    &kp PAGE_DOWN  &kp UP           &kp C_VOLUME_DOWN
+&kp LCTRL       &kp Z   &kp X   &kp C     &kp V      &kp B     &to 4        &to 0           &kp N             &kp M              &kp I      &kp LEFT       &kp DOWN         &kp RIGHT
                                 &kp LGUI  &kp LCTRL  &kp LALT  &kp SPACE    &kp LEFT_SHIFT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp RCTRL
             >;
 
