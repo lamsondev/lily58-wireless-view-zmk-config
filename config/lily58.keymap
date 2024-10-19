@@ -75,11 +75,11 @@
 
             display-name = "raise";
             bindings = <
-&bt BT_SEL 4   &bt BT_SEL 3     &bt BT_SEL 2  &bt BT_SEL 1    &bt BT_SEL 0     &bt BT_CLR                               &bt BT_CLR  &bt BT_SEL 0      &bt BT_SEL 1       &bt BT_SEL 2          &bt BT_SEL 3           &bt BT_SEL 4
-&kp F1         &kp F2           &kp F3        &kp F4          &kp F5           &kp F6                                   &kp F7      &kp F8            &kp F9             &kp F10               &kp F11                &kp F12
-&kp BACKSLASH  &kp N1           &kp N2        &kp N3          &kp N4           &kp N5                                   &kp N6      &kp N7            &kp N8             &kp N9                &kp N0                 &kp SINGLE_QUOTE
-&kp LSHFT      &kp EXCLAMATION  &kp AT        &kp HASH        &kp DOLLAR       &kp PERCENT  &bootloader    &bootloader  &kp CARET   &kp AMPERSAND     &kp STAR           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LSHFT
-                                              &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp EQUAL    &kp MINUS      &none        &kp LALT    &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&none          &none            &none   &none           &none            &none                                    &bt BT_CLR  &bt BT_SEL 0      &bt BT_SEL 1       &bt BT_SEL 2          &bt BT_SEL 3           &bt BT_SEL 4
+&kp F1         &kp F2           &kp F3  &kp F4          &kp F5           &kp F6                                   &kp F7      &kp F8            &kp F9             &kp F10               &kp F11                &kp F12
+&kp BACKSLASH  &kp N1           &kp N2  &kp N3          &kp N4           &kp N5                                   &kp N6      &kp N7            &kp N8             &kp N9                &kp N0                 &kp SINGLE_QUOTE
+&kp LSHFT      &kp EXCLAMATION  &kp AT  &kp HASH        &kp DOLLAR       &kp PERCENT  &bootloader    &bootloader  &kp CARET   &kp AMPERSAND     &kp STAR           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LSHFT
+                                        &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp EQUAL    &kp MINUS      &none        &kp LALT    &kp LEFT_BRACKET  &kp RIGHT_BRACKET
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -94,7 +94,20 @@
                                           &mt LEFT_BRACKET LEFT_PARENTHESIS  &mt RIGHT_BRACKET RIGHT_PARENTHESIS  &kp BACKSPACE    &kp SPACE    &none  &none  &none  &none
             >;
 
-            label = "numpad";
+            label = "productivity";
+        };
+
+        gaming {
+            display-name = "gaming";
+            bindings = <
+&kp ESC    &kp N1  &kp N2  &kp N3    &kp N4     &kp N5                                 &kp F1            &kp F2             &kp F3     &kp F4         &kp F5       &kp F6
+&kp TAB    &kp Q   &kp W   &kp E     &kp R      &kp T                                  &kp U             &kp INSERT         &kp HOME   &kp PAGE_UP    &kp C_PAUSE  &kp C_VOLUME_UP
+&kp CAPS   &kp A   &kp S   &kp D     &kp F      &kp G                                  &kp J             &kp DELETE         &kp END    &kp PAGE_DOWN  &kp UP       &kp C_VOLUME_DOWN
+&kp LSHFT  &kp Z   &kp X   &kp C     &kp V      &kp B     &to 4        &none           &kp N             &kp M              &kp I      &kp LEFT       &kp DOWN     &kp RIGHT
+                           &kp LGUI  &kp LCTRL  &kp LALT  &kp SPACE    &kp LEFT_SHIFT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp RCTRL
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
     };
 };
