@@ -73,7 +73,7 @@
                            &kp LC(LEFT_SHIFT)  &kp LEFT_BRACKET  &kp LALT  &kp SPACE    &lt 1 RETURN  &kp BACKSPACE  &kp RBKT    &kp RCTRL
             >;
 
-            label = "MMO";
+            label = "gaming";
         };
     };
 };
