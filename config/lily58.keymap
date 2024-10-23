@@ -49,7 +49,7 @@
                                                              &kp EQUAL  &kp LEFT_CONTROL  &kp SPACE        &trans        &kp UNDERSCORE  &trans      &trans    &trans
             >;
 
-            display-name = "Lower";
+            display-name = "lower";
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
@@ -62,7 +62,7 @@
                                   &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp EQUAL    &kp MINUS      &trans       &trans      &kp LEFT_BRACKET  &kp RIGHT_BRACKET
             >;
 
-            display-name = "Raise";
+            display-name = "raise";
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
