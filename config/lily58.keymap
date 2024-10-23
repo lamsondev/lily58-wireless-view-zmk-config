@@ -12,18 +12,6 @@
     keymap {
         compatible = "zmk,keymap";
 
-        qwerty {
-            bindings = <
-&kp ESC    &kp N1  &kp N2  &kp N3    &kp N4     &kp N5                            &kp N6    &kp N7     &kp N8     &kp N9   &kp N0    &kp GRAVE
-&kp TAB    &kp Q   &kp W   &kp E     &kp R      &kp T                             &kp Y     &kp U      &kp I      &kp O    &kp P     &kp BSLH
-&kp CAPS   &kp A   &kp S   &kp D     &kp F      &kp G                             &kp H     &kp J      &kp K      &kp L    &kp SEMI  &kp APOS
-&kp LSHFT  &kp Z   &kp X   &kp C     &kp V      &kp B     &to 4        &trans     &kp N     &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                           &kp LGUI  &kp LCTRL  &kp LALT  &kp SPACE    &kp ENTER  &kp BSPC  &kp LCTRL  &to 1
-            >;
-
-            label = "qwerty";
-        };
-
         colemak_dh {
             display-name = "colemak_dh";
             bindings = <
@@ -31,11 +19,25 @@
 &kp TAB       &kp Q   &kp W   &kp F     &kp P      &kp B                                  &kp J     &kp L      &kp U      &kp Y    &kp SEMI  &kp BSLH
 &kp CAPSLOCK  &kp A   &kp R   &kp S     &kp T      &kp G                                  &kp M     &kp N      &kp E      &kp I    &kp O     &kp SQT
 &kp LSHFT     &kp Z   &kp X   &kp C     &kp D      &kp V     &to 4          &none         &kp K     &kp H      &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                              &kp LGUI  &kp LCTRL  &kp LALT  &lt 2 SPACE    &lt 3 RETURN  &kp BSPC  &kp LCTRL  &to 0
+                              &kp LGUI  &kp LCTRL  &kp LALT  &lt 2 SPACE    &lt 3 RETURN  &kp BSPC  &kp LCTRL  &to 1
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
             label = "COLEMAK_DH";
+        };
+
+        qwerty {
+            label = "qwerty";
+            display-name = "qwerty";
+            bindings = <
+&kp ESC       &kp N1  &kp N2  &kp N3    &kp N4     &kp N5                                 &kp N6    &kp N7     &kp N8     &kp N9   &kp N0    &kp GRAVE
+&kp TAB       &kp Q   &kp W   &kp E     &kp R      &kp T                                  &kp Y     &kp U      &kp I      &kp O    &kp P     &kp BSLH
+&kp CAPSLOCK  &kp A   &kp S   &kp D     &kp F      &kp G                                  &kp H     &kp J      &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LSHFT     &kp Z   &kp X   &kp C     &kp V      &kp B     &to 4          &none         &kp N     &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
+                              &kp LGUI  &kp LCTRL  &kp LALT  &lt 2 SPACE    &lt 3 RETURN  &kp BSPC  &kp LCTRL  &to 0
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         lower_layer {
@@ -69,8 +71,8 @@
 &kp ESC    &kp N1  &kp N2  &kp N3              &kp N4            &kp N5                               &kp F1         &kp F2      &kp F3     &kp F4         &kp F5           &kp F6
 &kp TAB    &kp Q   &kp W   &kp E               &kp R             &kp T                                &kp Y          &kp INSERT  &kp HOME   &kp PAGE_UP    &kp PAUSE_BREAK  &kp BSLH
 &kp LSHFT  &kp A   &kp S   &kp D               &kp F             &kp G                                &kp H          &kp DELETE  &kp END    &kp PAGE_DOWN  &kp UP_ARROW     &kp LEFT_SHIFT
-&kp LCTRL  &kp Z   &kp X   &kp C               &kp V             &kp B     &to 1        &trans        &kp N          &kp M       &kp COMMA  &kp LEFT       &kp DOWN         &kp RIGHT
-                           &kp LC(LEFT_SHIFT)  &kp LEFT_BRACKET  &kp LALT  &kp SPACE    &lt 1 RETURN  &kp BACKSPACE  &kp RBKT    &kp RCTRL
+&kp LCTRL  &kp Z   &kp X   &kp C               &kp V             &kp B     &to 0        &trans        &kp N          &kp M       &kp COMMA  &kp LEFT       &kp DOWN         &kp RIGHT
+                           &kp LC(LEFT_SHIFT)  &kp LEFT_BRACKET  &kp LALT  &kp SPACE    &lt 0 RETURN  &kp BACKSPACE  &kp RBKT    &kp RCTRL
             >;
 
             label = "gaming";
